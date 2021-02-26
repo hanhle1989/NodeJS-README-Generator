@@ -2,48 +2,36 @@
 function generateMarkdown(answers) {
   return `
 <h1>${answers.projectTitle}</h1>
-${answers.name}<br/>
-${answers.username}<br/>
-${answers.email}<br/>
-${answers.repository}<br/>
+<b>Name:</b> ${answers.name}<br/>
+<b>GitHub Username:</b> ${answers.username}<br/>
+<b>Email:</b> ${answers.email}<br/>
+<b>Project's Repository:</b> ${answers.repository}<br/>
 
 <p>&nbsp;</p>
 
-**TABLE OF CONTENTS**
+**TABLE OF CONTENTS**<br/>
 | [Description](#description) |
 | [Installation](#installation) |
 | [Usage](#usageInformation) |
 | [Contribution](#contribution) |
 | [Tests](#tests) |
 
-<p>&nbsp;</p>
-
-**PROJECT DESCRIPTION**
+**PROJECT DESCRIPTION**<br/>
 ${answers.description}
 
-<p>&nbsp;</p>
-
-**INSTALLATION INSTRUCTIONS**
+**INSTALLATION INSTRUCTIONS**<br/>
 ${answers.installation}
 
-<p>&nbsp;</p>
-
-**USAGE**
+**USAGE**<br/>
 ${answers.usageInformation}
 
-<p>&nbsp;</p>
-
-**USER CONTRIBUTION**
+**USER CONTRIBUTION**<br/>
 ${answers.contribution}
 
-<p>&nbsp;</p>
-
-**TESTS**
+**TESTS**<br/>
 ${answers.tests}
 
-<p>&nbsp;</p>
-
-**LICENSE**
+**LICENSE**<br/>
 This application is protected under ${answers.license} license.<br/>
 ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
 <br />`;
