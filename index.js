@@ -9,26 +9,6 @@ function promptUser() {
     return inquirer.prompt([
         {
             type: "input",
-            name: "name",
-            message: "What is your name?",
-        },
-        {
-            type: "input",
-            name: "username",
-            message: "What is your GitHub username?",
-        },
-        {
-            type: "input",
-            name: "email",
-            message: "What is your email address?",
-        },
-        {
-            type: "input",
-            name: "repository",
-            message: "What is your project's GitHub repository?",
-        },
-        {
-            type: "input",
             name: "projectTitle",
             message: "What is the title of your project?",
         },
@@ -61,7 +41,27 @@ function promptUser() {
             type: "list",
             name: "license",
             message: "Choose one of the license below:",
-            choices: ["Apache", "Academic", "GNU", "ISC", "MIT", "Mozilla", "Open"]
+            choices: ["Apache", "Academic", "GNU", "ISC", "MIT", "Mozilla", "None"]
+        },
+        {
+            type: "input",
+            name: "name",
+            message: "What is your name?",
+        },
+        {
+            type: "input",
+            name: "username",
+            message: "What is your GitHub username?",
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "What is your email address?",
+        },
+        {
+            type: "input",
+            name: "repository",
+            message: "What is your project's GitHub repository?",
         },
     ])
 }
@@ -74,7 +74,7 @@ async function init() {
 
         // Write new README.md to dist directory
         await writeFileAsync('./utils/README.md', generateContent);
-        console.log('Successfully wrote to README.md');
+        console.log('Successfully created your README.md');
 
     }   catch(error) {
         console.log(error);

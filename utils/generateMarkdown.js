@@ -2,39 +2,42 @@
 function generateMarkdown(answers) {
   return `
 <h1>${answers.projectTitle}</h1>
-<b>Name:</b> ${answers.name}<br/>
-<b>GitHub Username:</b> ${answers.username}<br/>
-<b>Email:</b> ${answers.email}<br/>
-<b>Project's Repository:</b> ${answers.repository}<br/>
-
-<p>&nbsp;</p>
 
 **TABLE OF CONTENTS**<br/>
 | [Description](#description) |
 | [Installation](#installation) |
-| [Usage](#usageInformation) |
+| [Usage](#usage-information) |
 | [Contribution](#contribution) |
 | [Tests](#tests) |
+| [License](#license) |
+| [Questions](#questions) |
 
-**PROJECT DESCRIPTION**<br/>
-${answers.description}
+**PROJECT DESCRIPTION**<br/> 
+${answers.description} {#description}
 
-**INSTALLATION INSTRUCTIONS**<br/>
-${answers.installation}
+**INSTALLATION INSTRUCTIONS**<br/> 
+${answers.installation} {#installation}
 
-**USAGE**<br/>
-${answers.usageInformation}
+**USAGE**<br/> 
+${answers.usageInformation} {#usage-information}
 
-**USER CONTRIBUTION**<br/>
-${answers.contribution}
+**USER CONTRIBUTION}**<br/> 
+${answers.contribution} {#contribution}
 
-**TESTS**<br/>
-${answers.tests}
+**TESTS {#test}**<br/> 
+${answers.tests} {#test}
 
-**LICENSE**<br/>
-This application is protected under ${answers.license} license.<br/>
-![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
-<br />`;
+**LICENSE**<br/> 
+This application is covered under ${answers.license} license.<br/>
+![badge](https://img.shields.io/badge/license-${answers.license}-blue)
+<br /> {#license}
+
+**QUESTIONS?**<br/> 
+If you have any question, please contact ${answers.name} at ${answers.email}<br/>
+<b>GitHub Username:</b> ${answers.username}<br/>
+<b>Project's GitHub Repository:</b> ${answers.repository} {#questions}
+
+`;
 };
 
 module.exports = generateMarkdown;
