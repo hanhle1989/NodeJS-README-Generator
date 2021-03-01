@@ -13,30 +13,29 @@ function generateMarkdown(answers) {
 | [Questions](#questions) |
 
 **PROJECT DESCRIPTION**<br/> 
-${answers.description} {#description}
+${answers.description} 
 
 **INSTALLATION INSTRUCTIONS**<br/> 
-${answers.installation} {#installation}
+${answers.installation} 
 
 **USAGE**<br/> 
-${answers.usageInformation} {#usage-information}
+${answers.usageInformation} 
 
-**USER CONTRIBUTION}**<br/> 
-${answers.contribution} {#contribution}
+**USER CONTRIBUTION**<br/> 
+${answers.contribution}
 
-**TESTS {#test}**<br/> 
+**TESTS**<br/> 
 ${answers.tests} {#test}
 
 **LICENSE**<br/> 
 This application is covered under ${answers.license} license.<br/>
 ![badge](https://img.shields.io/badge/license-${answers.license}-blue)
-<br /> {#license}
+<br />
 
 **QUESTIONS?**<br/> 
 If you have any question, please contact ${answers.name} at ${answers.email}<br/>
 <b>GitHub Username:</b> ${answers.username}<br/>
-<b>Project's GitHub Repository:</b> ${answers.repository} {#questions}
-
+<b>Project's GitHub Repository:</b> ${answers.repository}
 `;
 };
 

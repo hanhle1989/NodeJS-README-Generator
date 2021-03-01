@@ -7,7 +7,8 @@ Create a command-line application that dynamically generates a professional READ
 **INSTALLATION INSTRUCTION**<br/> 
 First, install npm, then invoke the app using "node index.js" command
 
-**DEMO**
+**DEMO**<br/> 
+![readme generator demo](./demo/readme-generator-demo.gif)
 
 **QUESTIONS?**<br/> 
 If you have any question, please contact Hanh Le at hanhdtle@gmail.com<br/>
